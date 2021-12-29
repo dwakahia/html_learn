@@ -73,6 +73,12 @@ blockquote {
     background-color: aqua;
 }
 
+.bio-content{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: lighter;
+    line-height: 20px;
+}
 
 footer p {
     text-align: center;
