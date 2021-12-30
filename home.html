@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Dolph Lundgren</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli|Russo+One" rel="stylesheet">
 </head>
 <body>
@@ -55,17 +55,37 @@
     <h4 class="title">Lifestyle</h4>
     <div class="underline"></div>
 
-    <iframe class="center-video" width="550" height="400"
+    <iframe class="center" width="550" height="400"
             src="https://www.youtube.com/embed/OGyqHLQ_RoY">
     </iframe>
 
     <h4 class="title">Favourite Music</h4>
     <div class="underline"></div>
 
-    <audio class="center-video" controls autoplay>
+    <audio class="center" controls autoplay>
         <source src="music.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
+
+
+    <h4 class="title">Lets Get Talking</h4>
+    <div class="underline"></div>
+
+
+    <div class="center form">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="message">Message</label>
+            <textarea id="message">Type something awesome</textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 
 
     <footer>
