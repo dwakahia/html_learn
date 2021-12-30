@@ -1,4 +1,8 @@
 $maincolor: #4CAF50;
+@mixin marginHorizontal($value: auto) {
+  margin-right: $value;
+  margin-left: $value;
+}
 
 body {
   background-color: $maincolor;
@@ -31,22 +35,24 @@ body {
 }
 
 
-header h1 {
-  color: Black;
-  font-family: 'Russo One', sans-serif;
-  text-align: center;
-  font-size: 300%;
+header {
+  h1 {
+    color: #000000FF;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-size: 300%;
+  }
+
+  p {
+    text-align: center;
+    font-size: 30px;
+  }
 }
 
-header p {
-  text-align: center;
-  font-size: 30px;
-}
 
 .picone {
+  @include marginHorizontal();
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
   display: block;
   border-radius: 30px;
 }
@@ -72,32 +78,31 @@ blockquote {
   background-color: $maincolor;
 }
 
-.bio-content{
-  margin-left: 20px;
-  margin-right: 20px;
+.bio-content {
+  @include marginHorizontal($value: 20px);
   font-weight: lighter;
   line-height: 20px;
 }
 
-footer{
+footer {
   margin-top: 20px;
+
+  p {
+    text-align: center;
+    color: $maincolor;
+    font-size: 200%;
+  }
 }
 
-footer p {
-  text-align: center;
-  color: $maincolor;
-  font-size: 200%;
-}
 
-.center{
-  margin-left: auto;
-  margin-right: auto;
+.center {
+  @include marginHorizontal();
   margin-top: 20px;
   display: block;
 }
 
 
-input[type=text], select {
+input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -122,7 +127,7 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-div .form{
+div .form {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;

@@ -21,7 +21,7 @@ body {
     width: 1170px; } }
 
 header h1 {
-  color: Black;
+  color: #000000FF;
   font-family: 'Russo One', sans-serif;
   text-align: center;
   font-size: 300%; }
@@ -31,9 +31,9 @@ header p {
   font-size: 30px; }
 
 .picone {
-  width: 80%;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+  width: 80%;
   display: block;
   border-radius: 30px; }
 
@@ -56,26 +56,25 @@ blockquote {
   background-color: #4CAF50; }
 
 .bio-content {
-  margin-left: 20px;
   margin-right: 20px;
+  margin-left: 20px;
   font-weight: lighter;
   line-height: 20px; }
 
 footer {
   margin-top: 20px; }
-
-footer p {
-  text-align: center;
-  color: #4CAF50;
-  font-size: 200%; }
+  footer p {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 200%; }
 
 .center {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   margin-top: 20px;
   display: block; }
 
-input[type=text], select {
+input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
